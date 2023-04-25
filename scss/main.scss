@@ -1,3 +1,6 @@
+$color-page: #000;
+$id_and_colors: (1: #ff0000, 2: #00ff00, 3: #5c5cff, 4: #ffff00, 5: #00ffff, 6: #ffffff, 7: #ffa500, 8: #ffc0cb, 9: #c005c0, 10: #0ff78a, 11: #e932e9, 12: #add8e6);
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,13 +8,13 @@
 }
 
 body {
-    background-color: #000;
+    background-color: $color-page;
     width: 100%;
     min-height: 100vh;
 }
 
 .container {
-    background-color: #000;
+    background-color: $color-page;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -73,8 +76,6 @@ body {
         }
     }
 }
-
-$id_and_colors: (1: #ff0000, 2: #00ff00, 3: #5c5cff, 4: #ffff00, 5: #00ffff, 6: #ffffff, 7: #ffa500, 8: #ffc0cb, 9: #c005c0, 10: #0ff78a, 11: #e932e9, 12: #add8e6);
 
 @each $id, $color in $id_and_colors {
     #cube-#{$id} .cube__sides .side-color {
