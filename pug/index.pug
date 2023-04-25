@@ -1,16 +1,16 @@
-- var items = [1, 2];
+- var items = [0];
 
 
 mixin cubes(index)
-    article.cube
+    article(class="cube" id="cube-" + (items[index] + 1))
         div.cube__sides
             div.side.side--top
-            div.side.side--1
-            div.side.side--2
-            div.side.side--3
-            div.side.side--4
+            div.side.side-color.side--1
+            div.side.side-color.side--2
+            div.side.side-color.side--3
+            div.side.side-color.side--4
             div.side.side--bottom
-        div.cube__lightning
+            div.lightning
 
 
 
@@ -21,6 +21,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Light Cubes | Animation
+        link(rel="stylesheet", href="./css/main.css")
 
     body
         section.container
