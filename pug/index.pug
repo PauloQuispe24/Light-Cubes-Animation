@@ -1,8 +1,28 @@
+- var items = [1, 2];
+
+
+mixin cubes(index)
+    article.cube
+        div.cube__sides
+            div.side.side--top
+            div.side.side--1
+            div.side.side--2
+            div.side.side--3
+            div.side.side--4
+            div.side.side--bottom
+        div.cube__lightning
+
+
+
 doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        title Light Cubes | Animation
+
     body
+        section.container
+            each item in items
+                +cubes(item)
