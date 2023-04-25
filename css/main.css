@@ -26,8 +26,11 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 30px;
-  padding: 50px 30px;
+  -webkit-column-gap: 90px;
+     -moz-column-gap: 90px;
+          column-gap: 90px;
+  row-gap: 30px;
+  padding: 50px 30px 70px;
 }
 
 .cube {
@@ -94,20 +97,207 @@ body {
 }
 
 #cube-1 .cube__sides .side-color {
-  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(red));
-  background: linear-gradient(180deg, #111 0%, red 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#ff0000));
+  background: linear-gradient(180deg, #111 0%, #ff0000 100%);
 }
 
 #cube-1 .cube__sides .side--bottom {
-  background-color: red;
+  background-color: #ff0000;
 }
 
 #cube-1 .cube__sides .lightning {
-  background-color: red;
-  -webkit-box-shadow: 0 0 20px 20px red;
-          box-shadow: 0 0 20px 20px red;
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
+  background-color: #ff0000;
+  -webkit-box-shadow: 0 0 20px 20px #ff0000;
+          box-shadow: 0 0 20px 20px #ff0000;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+#cube-2 .cube__sides .side-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#00ff00));
+  background: linear-gradient(180deg, #111 0%, #00ff00 100%);
+}
+
+#cube-2 .cube__sides .side--bottom {
+  background-color: #00ff00;
+}
+
+#cube-2 .cube__sides .lightning {
+  background-color: #00ff00;
+  -webkit-box-shadow: 0 0 20px 20px #00ff00;
+          box-shadow: 0 0 20px 20px #00ff00;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+#cube-3 .cube__sides .side-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#5c5cff));
+  background: linear-gradient(180deg, #111 0%, #5c5cff 100%);
+}
+
+#cube-3 .cube__sides .side--bottom {
+  background-color: #5c5cff;
+}
+
+#cube-3 .cube__sides .lightning {
+  background-color: #5c5cff;
+  -webkit-box-shadow: 0 0 20px 20px #5c5cff;
+          box-shadow: 0 0 20px 20px #5c5cff;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+#cube-4 .cube__sides .side-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#ffff00));
+  background: linear-gradient(180deg, #111 0%, #ffff00 100%);
+}
+
+#cube-4 .cube__sides .side--bottom {
+  background-color: #ffff00;
+}
+
+#cube-4 .cube__sides .lightning {
+  background-color: #ffff00;
+  -webkit-box-shadow: 0 0 20px 20px #ffff00;
+          box-shadow: 0 0 20px 20px #ffff00;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+#cube-5 .cube__sides .side-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#00ffff));
+  background: linear-gradient(180deg, #111 0%, #00ffff 100%);
+}
+
+#cube-5 .cube__sides .side--bottom {
+  background-color: #00ffff;
+}
+
+#cube-5 .cube__sides .lightning {
+  background-color: #00ffff;
+  -webkit-box-shadow: 0 0 20px 20px #00ffff;
+          box-shadow: 0 0 20px 20px #00ffff;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+#cube-6 .cube__sides .side-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#ffffff));
+  background: linear-gradient(180deg, #111 0%, #ffffff 100%);
+}
+
+#cube-6 .cube__sides .side--bottom {
+  background-color: #ffffff;
+}
+
+#cube-6 .cube__sides .lightning {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px 20px #ffffff;
+          box-shadow: 0 0 20px 20px #ffffff;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+#cube-7 .cube__sides .side-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#ffa500));
+  background: linear-gradient(180deg, #111 0%, #ffa500 100%);
+}
+
+#cube-7 .cube__sides .side--bottom {
+  background-color: #ffa500;
+}
+
+#cube-7 .cube__sides .lightning {
+  background-color: #ffa500;
+  -webkit-box-shadow: 0 0 20px 20px #ffa500;
+          box-shadow: 0 0 20px 20px #ffa500;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+#cube-8 .cube__sides .side-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#ffc0cb));
+  background: linear-gradient(180deg, #111 0%, #ffc0cb 100%);
+}
+
+#cube-8 .cube__sides .side--bottom {
+  background-color: #ffc0cb;
+}
+
+#cube-8 .cube__sides .lightning {
+  background-color: #ffc0cb;
+  -webkit-box-shadow: 0 0 20px 20px #ffc0cb;
+          box-shadow: 0 0 20px 20px #ffc0cb;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+#cube-9 .cube__sides .side-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#c005c0));
+  background: linear-gradient(180deg, #111 0%, #c005c0 100%);
+}
+
+#cube-9 .cube__sides .side--bottom {
+  background-color: #c005c0;
+}
+
+#cube-9 .cube__sides .lightning {
+  background-color: #c005c0;
+  -webkit-box-shadow: 0 0 20px 20px #c005c0;
+          box-shadow: 0 0 20px 20px #c005c0;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+#cube-10 .cube__sides .side-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#0ff78a));
+  background: linear-gradient(180deg, #111 0%, #0ff78a 100%);
+}
+
+#cube-10 .cube__sides .side--bottom {
+  background-color: #0ff78a;
+}
+
+#cube-10 .cube__sides .lightning {
+  background-color: #0ff78a;
+  -webkit-box-shadow: 0 0 20px 20px #0ff78a;
+          box-shadow: 0 0 20px 20px #0ff78a;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+#cube-11 .cube__sides .side-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#e932e9));
+  background: linear-gradient(180deg, #111 0%, #e932e9 100%);
+}
+
+#cube-11 .cube__sides .side--bottom {
+  background-color: #e932e9;
+}
+
+#cube-11 .cube__sides .lightning {
+  background-color: #e932e9;
+  -webkit-box-shadow: 0 0 20px 20px #e932e9;
+          box-shadow: 0 0 20px 20px #e932e9;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+#cube-12 .cube__sides .side-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#add8e6));
+  background: linear-gradient(180deg, #111 0%, #add8e6 100%);
+}
+
+#cube-12 .cube__sides .side--bottom {
+  background-color: #add8e6;
+}
+
+#cube-12 .cube__sides .lightning {
+  background-color: #add8e6;
+  -webkit-box-shadow: 0 0 20px 20px #add8e6;
+          box-shadow: 0 0 20px 20px #add8e6;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
 }
 
 @-webkit-keyframes CubeAnimation {

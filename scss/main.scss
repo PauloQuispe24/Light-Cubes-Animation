@@ -18,8 +18,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px;
-    padding: 50px 30px;
+    column-gap: 90px;
+    row-gap: 30px;
+    padding: 50px 30px 70px;
 }
 
 .cube {
@@ -73,7 +74,7 @@ body {
     }
 }
 
-$id_and_colors: (1: red);
+$id_and_colors: (1: #ff0000, 2: #00ff00, 3: #5c5cff, 4: #ffff00, 5: #00ffff, 6: #ffffff, 7: #ffa500, 8: #ffc0cb, 9: #c005c0, 10: #0ff78a, 11: #e932e9, 12: #add8e6);
 
 @each $id, $color in $id_and_colors {
     #cube-#{$id} .cube__sides .side-color {
@@ -87,7 +88,7 @@ $id_and_colors: (1: red);
     #cube-#{$id} .cube__sides .lightning {
         background-color: $color;
         box-shadow: 0 0 20px 20px $color;
-        filter: blur(20px);
+        filter: blur(40px);
     }
 }
 
